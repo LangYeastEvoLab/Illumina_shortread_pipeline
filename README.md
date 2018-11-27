@@ -39,7 +39,7 @@ or our group's shared space
 
 clone the pipeline 
 
-`git clone pipeline repo url`
+`git clone https://github.com/LangYeastEvoLab/Illumina_shortread_pipeline.git`
 
 `cd Illumina_shortread_pipeline`
 
