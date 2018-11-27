@@ -29,25 +29,33 @@ Workflow:
 
 # To use pipeline on Lehigh's Sol HPC
 
-Work either in your scratch space 
+Work either in your scratch space  
+
 `cd /home/username/scratch`
+
 or our group's shared space
-'cd /share/ceph/gil213group/shared/'
+
+`cd /share/ceph/gil213group/shared/`
 
 clone the pipeline 
-`git clone pipeline repo url` 
-`cd Illumina_shortread_pipeline`
+```
+git clone pipeline repo url 
+cd Illumina_shortread_pipeline
+```
 
 Import reads from princeton iLab 
- `wget link_to_Read_1_passed_filter.fastq.gz`
- `wget link_to_ ...`
+ ```
+ wget link_to_Read_1_passed_filter.fastq.gz
+ wget link_to_ ...
+ ```
  Delete files that failed QC filter
  
  Rename the files to names specified by the barocode splitter script 
- `mv ...Read_1_passed_filter.fastq.gz read1.fastq.gz`
- `mv ...Read_2_... read2_N7index.fastq.gz`
- `mv ..Read_3_... read3_N5index.fastq.gz`
- 
+ ```
+ mv ...Read_1_passed_filter.fastq.gz read1.fastq.gz
+ mv ...Read_2_... read2_N7index.fastq.gz
+ mv ..Read_3_... read3_N5index.fastq.gz
+ ```
  Modify the files to reflect the correct paths. If you are in your home directory's scratch folder, replace `PATH/TO/` in all scripts with `/home/username/scratch/Illumina_shortread_pipeline/` 
 
 
