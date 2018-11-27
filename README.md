@@ -1,6 +1,8 @@
 # Illumina_shortread_pipeline
 
-Workflow: 
+This repository contains all scripts needed to analyze short read Illumina data generated in the Lang Lab. Assembled by SWB and KJF as a repository 11/18. 
+
+# Workflow: 
 
 ## Barcode splitter 
 *demultiplexes by N5 and N7 Nextera indices* 
