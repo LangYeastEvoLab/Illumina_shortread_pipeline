@@ -21,8 +21,12 @@ do
 	
 	samtools view -bS N5$N5\N7$N7\.sam > N5$N5\N7$N7\.bam
 		
-	samtools sort N5$N5\N7$N7\.bam N5$N5\N7$N7\-sorted.bam
+	samtools sort N5$N5\N7$N7\.bam -o N5$N5\N7$N7\-sorted.bam
 		
 	samtools index N5$N5\N7$N7\-sorted.bam
 	done 
 done 
+
+#hash out to retain sam and sai files 
+rm PATH/TO/*.sam 
+rm PATH/TO/*.sai
