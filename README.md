@@ -13,6 +13,7 @@ This repository contains all scripts needed to analyze short read Illumina data 
 *trims adapter sequences from raw reads* 
 - Input: demultiplexed fastq files
 - Output: clipped fastq files  
+*Note - fastx clipper doesn't work with paired end reads. If paired end reads need to be processed, generate a job submission file for the trimmomatic script*
 ---
 ## bwa aligner 
 *aligns reads to reference genome* 
