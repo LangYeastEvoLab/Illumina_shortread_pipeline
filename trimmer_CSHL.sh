@@ -4,12 +4,11 @@
 # KJF
 # Trimmomatic is a tool that should remove Illumina adapter sequence from our Fastq reads. 
 
-#this is a bash "for" loop. Because you've only got one sample in your folder, 
 # the script will generate empty files for the other indices. That's ok, we'll just delete them. 
 
-for N5 in 02 17
+for N5 in 02 03 04 05 06 07 08 17
 do
-	for N7 in 01 02 03 04 
+	for N7 in 01 02 03 04 05 06 07 08 09 10 11 12
 	do
 	
 java -jar trimmomatic-0.35.jar PE -phred33 N5$N5\N7$N7\SPLITREAD1.fastq N5$N5\N7$N7\SPLITREAD4.fastq N5$N5\N7$N7\_read1_paired_trimmed.fastq N5$N5\N7$N7\_read1_unpaired_trimmed.fastq N5$N5\N7$N7\_read4_paired_trimmed.fastq N5$N5\N7$N7\_read1_unpaired_trimmed.fastq ILLUMINACLIP:TruSeq3-PE.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
