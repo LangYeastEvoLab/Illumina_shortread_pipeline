@@ -1,4 +1,4 @@
-#!bin/bash
+#!/bin/bash
 
 # Script to align single end demultiplexed clipped fastq files to W303 genome via BWA 
 # Script assumes reference files are kept in a directory called reference_files - update paths if this is not the case. 
